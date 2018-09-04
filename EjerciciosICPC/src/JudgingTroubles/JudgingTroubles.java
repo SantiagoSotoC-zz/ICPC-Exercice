@@ -11,15 +11,16 @@ public class JudgingTroubles {
         while (in.hasNextLine()) {
             ArrayList<String> datos1 = new ArrayList<>();
             ArrayList<String> datos2 = new ArrayList<>();
-            int cant = in.nextInt();
-            in.nextLine();
-
+//            int cant = in.nextInt();
+//            in.nextLine();
+Random r =new Random();
+            int cant= 10000;
             for (int i = 0; i < cant; i++) {
-                datos1.add(in.nextLine());
+                datos1.add(r.nextInt(cant)+"");
             }
 
             for (int i = 0; i < cant; i++) {
-                datos2.add(in.nextLine());
+                datos2.add(r.nextInt(cant)+"");
             }
 
         
